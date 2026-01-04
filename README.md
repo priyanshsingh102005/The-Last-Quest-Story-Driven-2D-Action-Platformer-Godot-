@@ -29,5 +29,9 @@ Interact / Dialogue: E / Q
   <img src="media/video.png" width="600" alt="The Last Quest Gameplay">
 </a>
 
+> **Note:**
+> This game was developed as part of a game jam and completed in 5 days.  
+> Due to the limited time frame, some areas may feel unpolished or incomplete.  
+> The project is stable and serves as a foundation for learning and future improvements.
 
 
