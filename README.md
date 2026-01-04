@@ -24,7 +24,10 @@ Jump: Space
 Attack: Tab / -
 Interact / Dialogue: E / Q
 
-### 🎮 Gameplay Video
-[![Gameplay Video](media/video.png)](https://youtu.be/DvASobtR7Yw)
+### 🎮 Gameplay Preview
+<a href="https://youtu.be/DvASobtR7Yw">
+  <img src="media/video.png" width="600" alt="The Last Quest Gameplay">
+</a>
+
 
 
