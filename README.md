@@ -1,37 +1,58 @@
-# The-Last-Quest-Story-Driven-2D-Action-Platformer-Godot-
-A story-driven 2D action platformer made in Godot for a game jam, featuring combat, platforming, and narrative-focused gameplay.
+# The Last Quest
 
-**The Last Quest**
+**The Last Quest** is a story-driven 2D action platformer developed in **Godot Engine** as part of a game jam.
 
-The Last Quest is a story-driven 2D action platformer developed in Godot Engine for a game jam.
+You play as a retired hero who abandoned his life of battle long ago. When a lone king arrives, speaking of a cursed castle filled with monsters—and offering something impossible to ignore—you are forced to confront your past and step back into darkness.
 
-You play as a former hero who has abandoned his life of battle, living quietly away from the world. When a king arrives with news of a cursed castle filled with monsters—and offers a chance to recover what was once lost—you are forced to confront your past.
+This journey is not just about combat, but about loss, redemption, and the light that still survives in broken souls.
 
-**The game focuses on:**
+---
 
-Responsive 2D movement and platforming
-Combat-driven encounters
-Environmental storytelling
-A narrative centered on redemption, loss, and resolve
-
-This project was built within a limited time frame and serves as both a complete game jam entry and a foundation for future expansion.
-
-**Controls**
-
-Move Left: A / J
-Move Right: D / L
-Jump: Space
-Attack: Tab / -
-Interact / Dialogue: E / Q
-
-### 🎮 Gameplay Preview
-<a href="https://youtu.be/DvASobtR7Yw">
+## 🎮 Gameplay Preview
+<a href="https://void200510.itch.io/the-last-quest">
   <img src="media/video.png" width="600" alt="The Last Quest Gameplay">
 </a>
 
-> **Note:**
-> This game was developed as part of a game jam and completed in 5 days.  
-> Due to the limited time frame, some areas may feel unpolished or incomplete.  
-> The project is stable and serves as a foundation for learning and future improvements.
+---
 
+## ⚔️ Features
+- Story-driven 2D action platformer gameplay  
+- Responsive movement and combat mechanics  
+- Enemy encounters inside a cursed castle  
+- Narrative focused on redemption and loss  
+- Atmospheric pixel-art environments  
 
+---
+
+## 🎮 Controls
+- **Move Left:** A / J  
+- **Move Right:** D / L  
+- **Jump:** Space  
+- **Attack:** Tab or `-` (Minus key)  
+- **Interact / Dialogue:** E or Q  
+
+---
+
+## 🧪 Project Status
+> **Note:** This project was developed for a game jam and completed within 5 days.  
+> Due to time constraints, some areas may feel unpolished or incomplete.  
+> The project is stable and serves as a foundation for future improvements.
+
+---
+
+## 💻 Build Recommendation
+For the best experience, download the **Windows (.exe)** version instead of playing in the browser:
+- Smoother performance  
+- Faster load times  
+
+---
+
+## 🔧 Tech Stack
+- **Engine:** Godot  
+- **Language:** GDScript  
+- **Platform:** Windows / Web  
+
+---
+
+## 👥 Contributors & Credits
+- **Priyansh Singh** — Game Programming, Core Mechanics, Systems Design  
