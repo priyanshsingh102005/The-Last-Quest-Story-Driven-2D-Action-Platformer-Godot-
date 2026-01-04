@@ -24,5 +24,6 @@ Jump: Space
 Attack: Tab / -
 Interact / Dialogue: E / Q
 
-**I made a short video**
-https://youtu.be/DvASobtR7Yw?si=7AiafcRLGU1AzrOo
+### Gameplay Video
+[![Gameplay Video](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)]([https://www.youtube.com/watch?v=YOUR_VIDEO_ID](https://youtu.be/DvASobtR7Yw?si=7AiafcRLGU1AzrOo))
+
