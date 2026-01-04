@@ -43,8 +43,7 @@ This journey is not just about combat, but about loss, redemption, and the light
 
 ## 🔧 Tech Stack
 - **Engine:** Godot  
-- **Language:** GDScript  
-- **Platform:** Windows / Web  
+- **Language:** GDScript 
 
 ---
 
