@@ -23,3 +23,6 @@ Move Right: D / L
 Jump: Space
 Attack: Tab / -
 Interact / Dialogue: E / Q
+
+**I made a short video**
+https://youtu.be/DvASobtR7Yw?si=7AiafcRLGU1AzrOo
