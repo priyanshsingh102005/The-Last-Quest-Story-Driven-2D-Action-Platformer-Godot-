@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=3 format=3 uid="uid://c0pywxfihpjp5"]
+
+[ext_resource type="Script" uid="uid://d3ctx8tgs6axp" path="res://Scripts/Dialogues.gd" id="1_asin0"]
+[ext_resource type="Texture2D" uid="uid://byyt1pj2i0gcc" path="res://Asset/Character/Main/Jotem/Jotem Portrate.png" id="1_qlj7i"]
+
+[resource]
+script = ExtResource("1_asin0")
+speaker_name = "Former Hero"
+side = "left"
+portrait = ExtResource("1_qlj7i")
+text = "So it’s true… my own son leading this chaos. Why, tell me why you’ve chosen this path?"
+metadata/_custom_type_script = "uid://d3ctx8tgs6axp"

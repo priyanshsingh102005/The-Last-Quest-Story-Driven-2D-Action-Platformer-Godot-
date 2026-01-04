@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://d05pgtiygcxgi"]
+
+[ext_resource type="Script" uid="uid://cokepwmosgdm8" path="res://Scene/Camera/cam_root.gd" id="1_fqnfj"]
+[ext_resource type="Script" uid="uid://dltmnc5y6gwrl" path="res://Scene/Camera/Screen_Shake.gd" id="2_3av4d"]
+
+[node name="Cam_Root" type="Node2D" node_paths=PackedStringArray("dead_zone")]
+script = ExtResource("1_fqnfj")
+dead_zone = NodePath("Dead_Zone")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(3.5, 3.5)
+limit_smoothed = true
+position_smoothing_enabled = true
+rotation_smoothing_enabled = true
+editor_draw_limits = true
+script = ExtResource("2_3av4d")
+
+[node name="Dead_Zone" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dead_Zone"]
+
+[connection signal="body_entered" from="Dead_Zone" to="." method="_on_stable_zone_body_entered"]
+[connection signal="body_exited" from="Dead_Zone" to="." method="_on_stable_zone_body_exited"]

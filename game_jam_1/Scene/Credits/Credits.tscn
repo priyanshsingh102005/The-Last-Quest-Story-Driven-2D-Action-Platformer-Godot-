@@ -1,0 +1,206 @@
+[gd_scene load_steps=29 format=3 uid="uid://c85rrcyk87t01"]
+
+[ext_resource type="Script" uid="uid://21wjsimu1vj7" path="res://Scene/Credits/credits.gd" id="1_8itp0"]
+[ext_resource type="Script" uid="uid://bnqgaf1w70468" path="res://Scripts/Credits.gd" id="2_b1o7b"]
+[ext_resource type="Texture2D" uid="uid://byyt1pj2i0gcc" path="res://Asset/Character/Main/Jotem/Jotem Portrate.png" id="3_ovac6"]
+[ext_resource type="Texture2D" uid="uid://cgjlgn2k00tb3" path="res://Asset/Character/Enemies/Knight/Portrate.png" id="4_lok6y"]
+[ext_resource type="Texture2D" uid="uid://dc7ma0f5jxfi7" path="res://Asset/Character/Enemies/Night_borne/Portrate.png" id="5_lok6y"]
+[ext_resource type="Texture2D" uid="uid://b66feghaaagd3" path="res://Asset/Character/Enemies/Skeleton/skeleton_portrate.png" id="6_0p2m2"]
+[ext_resource type="Texture2D" uid="uid://d0ce6ghiiqb6l" path="res://Asset/Character/Enemies/Skullwolf/prtrate.png" id="7_djmpl"]
+[ext_resource type="Texture2D" uid="uid://b4r6n1q53hx0i" path="res://Asset/Character/NPC/Boss/Medieval King Pack 2/King_Portrate.png" id="8_fgqyh"]
+[ext_resource type="Texture2D" uid="uid://bowqjxmilka30" path="res://Asset/Environment/World_1/Screenshot 2025-10-18 131409.png" id="9_aus7y"]
+[ext_resource type="Texture2D" uid="uid://cgv46624k6st1" path="res://Asset/Environment/World_2/Screenshot 2025-10-18 131823.png" id="10_h04n7"]
+[ext_resource type="Texture2D" uid="uid://b0mfmd1uprqjf" path="res://Asset/Projectiles/Screenshot 2025-10-18 132217.png" id="11_7ynud"]
+[ext_resource type="Texture2D" uid="uid://ps8xgyndhpx7" path="res://Asset/Projectiles/Screenshot 2025-10-18 132238.png" id="12_mrhet"]
+[ext_resource type="Texture2D" uid="uid://ypw3daq4uahu" path="res://Asset/Sounds/Screenshot 2025-10-18 132529.png" id="13_7ynud"]
+[ext_resource type="Texture2D" uid="uid://btky3rvjgda5j" path="res://Asset/Environment/Screenshot 2025-10-18 133135.png" id="14_mrhet"]
+[ext_resource type="Texture2D" uid="uid://d4lfn7htckavy" path="res://Asset/Projectiles/Screenshot 2025-10-18 163628.png" id="15_mrhet"]
+
+[sub_resource type="Resource" id="Resource_ym6cj"]
+script = ExtResource("2_b1o7b")
+sprite = ExtResource("3_ovac6")
+license = "You can use this asset for personal and commercial purpose,
+
+you can modify this object to your needs."
+creator = "Made by :- Atari Boy
+
+website: -https://itch.io/profile/atari-boy"
+metadata/_custom_type_script = "uid://bnqgaf1w70468"
+
+[sub_resource type="Resource" id="Resource_e481o"]
+script = ExtResource("2_b1o7b")
+sprite = ExtResource("4_lok6y")
+license = "You can use this asset in any game project, personal or commercial.
+DO NOT resell or redistribute AS A GAME ASSET, it has to be part of a project.
+Credit is not required but it is appreciated.
+Modify to suit your needs.
+You are NOT allowed to turn any of my assets to an NFT."
+creator = "Made by:- Mattz Art
+
+website: -https://xzany.itch.io/"
+metadata/_custom_type_script = "uid://bnqgaf1w70468"
+
+[sub_resource type="Resource" id="Resource_0p2m2"]
+script = ExtResource("2_b1o7b")
+sprite = ExtResource("5_lok6y")
+license = "1. Whether your project is commercial or non-commercial, feel free to use this asset.
+
+2. This asset is customizable, so you can make any necessary modifications.
+
+3. It is prohibited to distribute or resell this asset."
+creator = "Made by:- CreativeKind
+ 
+website:- https://itch.io/profile/creativekind"
+metadata/_custom_type_script = "uid://bnqgaf1w70468"
+
+[sub_resource type="Resource" id="Resource_fgqyh"]
+script = ExtResource("2_b1o7b")
+sprite = ExtResource("6_0p2m2")
+license = "This package can be used in commercial and non-commercial projects - CC0(creative commons zero)."
+creator = "Made by :- LuizMelo
+
+website:- https://luizmelo.itch.io/"
+metadata/_custom_type_script = "uid://bnqgaf1w70468"
+
+[sub_resource type="Resource" id="Resource_v6evn"]
+script = ExtResource("2_b1o7b")
+sprite = ExtResource("7_djmpl")
+license = "You can use this asset for personal and commercial purpose,
+
+you can modify this object to your needs."
+creator = "Made by :- Atari Boy
+
+website: -https://itch.io/profile/atari-boy"
+metadata/_custom_type_script = "uid://bnqgaf1w70468"
+
+[sub_resource type="Resource" id="Resource_bmd7f"]
+script = ExtResource("2_b1o7b")
+sprite = ExtResource("8_fgqyh")
+license = "This package can be used freely and commercially - CC0(creative commons zero)."
+creator = "Made by:- LuizMelo
+
+website: -https://luizmelo.itch.io/"
+metadata/_custom_type_script = "uid://bnqgaf1w70468"
+
+[sub_resource type="Resource" id="Resource_aus7y"]
+script = ExtResource("2_b1o7b")
+sprite = ExtResource("9_aus7y")
+license = "All assets included in this package are licensed under the Creative Commons Zero (CC0)
+license"
+creator = "Made by:-  ansimuz
+
+Website-: https://itch.io/profile/ansimuz"
+metadata/_custom_type_script = "uid://bnqgaf1w70468"
+
+[sub_resource type="Resource" id="Resource_yl6q1"]
+script = ExtResource("2_b1o7b")
+sprite = ExtResource("10_h04n7")
+license = "Public domain and free to use, personal or commercial. Credit is not required but appreciated. You can edit, but not sell the asset pack."
+creator = "Artwork created by Szadi art."
+metadata/_custom_type_script = "uid://bnqgaf1w70468"
+
+[sub_resource type="Resource" id="Resource_g7v0c"]
+script = ExtResource("2_b1o7b")
+sprite = ExtResource("11_7ynud")
+license = "You can use and modify this asset for personal and commercial purpose. Credit is not required but would be appreciated"
+creator = "Made by:- pimen
+
+website:- https://pimen.itch.io/"
+metadata/_custom_type_script = "uid://bnqgaf1w70468"
+
+[sub_resource type="Resource" id="Resource_6scyn"]
+script = ExtResource("2_b1o7b")
+sprite = ExtResource("12_mrhet")
+license = "You can use and modify this asset for personal and commercial purpose. Credit is not required but would be appreciated"
+creator = "Made by:- pimen
+
+website:- https://pimen.itch.io/"
+metadata/_custom_type_script = "uid://bnqgaf1w70468"
+
+[sub_resource type="Resource" id="Resource_bgll4"]
+script = ExtResource("2_b1o7b")
+sprite = ExtResource("13_7ynud")
+license = "This album is provided under a non-exclusive use license, allowing the use
+of the included music in a wide variety of projects, both commercial and
+non-commercial. By using the provided material, you agree to the following terms
+of this license:"
+creator = "I use four Sounds:
+1).01 - Falling Apart (Prologue).mp3
+
+2).02 - Title Theme.mp3
+
+3).12 - Frozen Abyss.mp3
+
+4).14 - Tales of Firelight Town.mp3
+Made 
+
+5).16 - The Calm Before The Storm.mp3
+
+by-:xDeviruchi
+
+website: - https://xdeviruchi.itch.io/
+"
+metadata/_custom_type_script = "uid://bnqgaf1w70468"
+
+[sub_resource type="Resource" id="Resource_jhkma"]
+script = ExtResource("2_b1o7b")
+sprite = ExtResource("14_mrhet")
+license = ""
+creator = "Made by:- AxoLotie
+
+website:- https://axolotie.itch.io/"
+metadata/_custom_type_script = "uid://bnqgaf1w70468"
+
+[sub_resource type="Resource" id="Resource_7ynud"]
+script = ExtResource("2_b1o7b")
+sprite = ExtResource("15_mrhet")
+license = "You can use and modify this asset for personal and commercial purpose. Credit is not required but would be appreciated"
+creator = "Made by:- pimen
+
+website:- https://pimen.itch.io/"
+metadata/_custom_type_script = "uid://bnqgaf1w70468"
+
+[node name="Credits" type="CanvasLayer"]
+script = ExtResource("1_8itp0")
+credits_data = Array[ExtResource("2_b1o7b")]([SubResource("Resource_ym6cj"), SubResource("Resource_e481o"), SubResource("Resource_0p2m2"), SubResource("Resource_fgqyh"), SubResource("Resource_v6evn"), SubResource("Resource_bmd7f"), SubResource("Resource_aus7y"), SubResource("Resource_yl6q1"), SubResource("Resource_g7v0c"), SubResource("Resource_6scyn"), SubResource("Resource_bgll4"), SubResource("Resource_jhkma"), SubResource("Resource_7ynud")])
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 2376.0
+offset_bottom = 1408.0
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 248.0
+offset_top = 152.0
+offset_right = 288.0
+offset_bottom = 192.0
+scale = Vector2(1.5, 1.5)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 0
+offset_right = 92.0
+offset_bottom = 62.0
+
+[node name="Credits" type="Label" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "Credits"
+
+[node name="GridContainer" type="GridContainer" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 40
+columns = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/VBoxContainer"]
+layout_mode = 2
+
+[node name="next" type="Button" parent="Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Next"
+
+[node name="prev" type="Button" parent="Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Prev"
+
+[connection signal="pressed" from="Control/VBoxContainer/HBoxContainer/next" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/HBoxContainer/prev" to="." method="_on_prev_pressed"]

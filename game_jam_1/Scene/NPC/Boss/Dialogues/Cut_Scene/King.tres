@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=3 format=3 uid="uid://cs5rlif8k0blf"]
+
+[ext_resource type="Texture2D" uid="uid://b4r6n1q53hx0i" path="res://Asset/Character/NPC/Boss/Medieval King Pack 2/King_Portrate.png" id="1_vk3g0"]
+[ext_resource type="Script" uid="uid://d3ctx8tgs6axp" path="res://Scripts/Dialogues.gd" id="1_vs5a0"]
+
+[resource]
+script = ExtResource("1_vs5a0")
+speaker_name = "King"
+side = "right"
+portrait = ExtResource("1_vk3g0")
+text = "If you do this, I’ll give you a lead on your son’s whereabouts… and my full support to find him."
+metadata/_custom_type_script = "uid://d3ctx8tgs6axp"

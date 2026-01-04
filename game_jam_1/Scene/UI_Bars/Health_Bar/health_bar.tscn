@@ -1,0 +1,71 @@
+[gd_scene load_steps=6 format=3 uid="uid://blxokk1cv8b8m"]
+
+[ext_resource type="Script" uid="uid://f6irnw18ow3u" path="res://Scene/UI_Bars/Health_Bar/health_bar.gd" id="1_3mk1m"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tn7ki"]
+bg_color = Color(0, 0, 0, 0)
+skew = Vector2(1, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3c206"]
+bg_color = Color(0, 0.529412, 0, 1)
+skew = Vector2(1, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pc6lp"]
+bg_color = Color(1, 1, 1, 0)
+skew = Vector2(1, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_exumb"]
+bg_color = Color(1, 1, 1, 1)
+skew = Vector2(1, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+
+[node name="HealthBar" type="ProgressBar" node_paths=PackedStringArray("timer", "damage_bar")]
+z_index = 1
+offset_right = 120.0
+offset_bottom = 11.615
+theme_override_styles/background = SubResource("StyleBoxFlat_tn7ki")
+theme_override_styles/fill = SubResource("StyleBoxFlat_3c206")
+value = 89.06
+show_percentage = false
+script = ExtResource("1_3mk1m")
+timer = NodePath("Timer")
+damage_bar = NodePath("DamageBar")
+
+[node name="DamageBar" type="ProgressBar" parent="."]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_pc6lp")
+theme_override_styles/fill = SubResource("StyleBoxFlat_exumb")
+value = 100.0
+show_percentage = false
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

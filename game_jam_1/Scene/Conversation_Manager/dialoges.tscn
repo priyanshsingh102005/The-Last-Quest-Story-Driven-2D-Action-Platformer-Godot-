@@ -1,0 +1,346 @@
+[gd_scene load_steps=11 format=3 uid="uid://d4edy71xek0mm"]
+
+[ext_resource type="Script" uid="uid://c5idrgi4impkm" path="res://Scene/Conversation_Manager/dialoges.gd" id="1_cwu6m"]
+[ext_resource type="Script" uid="uid://c8cq3vm5pgnmb" path="res://Scene/Conversation_Manager/dialogue_manager.gd" id="2_2hber"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2v3ou"]
+size = Vector2(54, 1064)
+
+[sub_resource type="Animation" id="Animation_2hber"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Upper:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -100)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Lower:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 1050)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Dialogue_Box:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1e-05, 1e-05)]
+}
+
+[sub_resource type="Animation" id="Animation_solht"]
+resource_name = "end"
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Upper:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -100)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Lower:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 953), Vector2(0, 1050)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Dialogue_Box:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1e-05, 1e-05)]
+}
+
+[sub_resource type="Animation" id="Animation_4y2w5"]
+resource_name = "start"
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Upper:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -100), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Lower:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 1050), Vector2(0, 953)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Dialogue_Box:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.596304),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1e-05, 1e-05), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8268g"]
+_data = {
+&"RESET": SubResource("Animation_2hber"),
+&"end": SubResource("Animation_solht"),
+&"start": SubResource("Animation_4y2w5")
+}
+
+[sub_resource type="Animation" id="Animation_4tucy"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Conversation:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../..:text_anim_finished")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_8268g"]
+resource_name = "anim"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Conversation:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../..:text_anim_finished")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vwqj0"]
+_data = {
+&"RESET": SubResource("Animation_4tucy"),
+&"anim": SubResource("Animation_8268g")
+}
+
+[node name="Dialoges" type="Node2D" node_paths=PackedStringArray("anim", "text_anim", "convo")]
+script = ExtResource("1_cwu6m")
+anim = NodePath("CanvasLayer/AnimationPlayer")
+text_anim = NodePath("Dialogue_Box/Panel/AnimationPlayer")
+dialogue_manager = NodePath("Dialogue_Manager")
+convo = NodePath("Dialogue_Box/Panel/Conversation")
+
+[node name="Dialogue_Manager" type="Node2D" parent="." node_paths=PackedStringArray("portrates", "labels", "texts")]
+script = ExtResource("2_2hber")
+portrates = [NodePath("../Dialogue_Box/Panel/Portrate_1"), NodePath("../Dialogue_Box/Panel/Portrate_2")]
+labels = [NodePath("../Dialogue_Box/Panel/Name_1"), NodePath("../Dialogue_Box/Panel/Name_2")]
+texts = NodePath("../Dialogue_Box/Panel/Conversation")
+
+[node name="Trigger_Area" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trigger_Area"]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_2v3ou")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="Upper" type="ColorRect" parent="CanvasLayer"]
+offset_top = -100.0
+offset_right = 2000.0
+offset_bottom = -4.0
+color = Color(0, 0, 0, 1)
+
+[node name="Lower" type="ColorRect" parent="CanvasLayer"]
+offset_top = 1050.0
+offset_right = 2000.0
+offset_bottom = 1153.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_8268g")
+}
+speed_scale = 1.3
+
+[node name="Dialogue_Box" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 72.0
+offset_bottom = 72.0
+scale = Vector2(1e-05, 1e-05)
+
+[node name="Panel" type="Panel" parent="Dialogue_Box"]
+layout_mode = 0
+offset_left = -144.0
+offset_top = -184.0
+offset_right = 885.0
+offset_bottom = 73.0
+scale = Vector2(0.28, 0.28)
+
+[node name="ColorRect" type="ColorRect" parent="Dialogue_Box/Panel"]
+layout_mode = 0
+offset_right = 1029.0
+offset_bottom = 257.0
+color = Color(0.20035, 0.257078, 0.264814, 0.717647)
+
+[node name="Portrate_1" type="TextureRect" parent="Dialogue_Box/Panel"]
+layout_mode = 0
+offset_top = -29.0
+offset_right = 286.0
+offset_bottom = 257.0
+
+[node name="Portrate_2" type="TextureRect" parent="Dialogue_Box/Panel"]
+layout_mode = 0
+offset_left = 743.0
+offset_top = -29.0
+offset_right = 1029.0
+offset_bottom = 257.0
+flip_h = true
+
+[node name="Conversation" type="RichTextLabel" parent="Dialogue_Box/Panel"]
+layout_mode = 0
+offset_left = 286.0
+offset_right = 743.0
+offset_bottom = 257.0
+theme_override_font_sizes/normal_font_size = 40
+visible_characters = 0
+visible_characters_behavior = 1
+visible_ratio = 0.0
+
+[node name="Name_1" type="Label" parent="Dialogue_Box/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.139
+anchor_bottom = 0.113
+offset_top = -85.7143
+offset_right = 142.969
+offset_bottom = -28.7553
+theme_override_font_sizes/font_size = 50
+
+[node name="Name_2" type="Label" parent="Dialogue_Box/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.139
+anchor_bottom = 0.113
+offset_left = 742.857
+offset_top = -85.7143
+offset_right = 885.826
+offset_bottom = -28.7553
+theme_override_font_sizes/font_size = 50
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Dialogue_Box/Panel"]
+libraries = {
+&"": SubResource("AnimationLibrary_vwqj0")
+}
+
+[connection signal="body_entered" from="Trigger_Area" to="." method="_on_trigger_area_body_entered"]
+[connection signal="body_exited" from="Trigger_Area" to="." method="_on_trigger_area_body_exited"]

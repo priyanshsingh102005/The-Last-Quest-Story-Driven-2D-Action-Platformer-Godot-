@@ -1,0 +1,137 @@
+[gd_scene load_steps=8 format=3 uid="uid://ddy3q7p74vl2w"]
+
+[ext_resource type="Script" uid="uid://bkmjavd7du6im" path="res://Scene/Ui_interface/Start_Menu.gd" id="1_vfre0"]
+[ext_resource type="Texture2D" uid="uid://cgv46624k6st1" path="res://Asset/Environment/World_2/Screenshot 2025-10-18 131823.png" id="2_ra187"]
+[ext_resource type="AudioStream" uid="uid://casc42egf6y00" path="res://Asset/Sounds/Bgs/16 - The Calm Before The Storm.mp3" id="3_vfjsx"]
+[ext_resource type="Script" uid="uid://dvbp2xw6n3570" path="res://Scene/Sound/Fade_out.gd" id="4_rxhbf"]
+
+[sub_resource type="Animation" id="Animation_dnjea"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control/ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0.192157)]
+}
+
+[sub_resource type="Animation" id="Animation_rxhbf"]
+resource_name = "anim"
+length = 0.3
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control/ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0.192157), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dnjea"]
+_data = {
+&"RESET": SubResource("Animation_dnjea"),
+&"anim": SubResource("Animation_rxhbf")
+}
+
+[node name="Interface" type="CanvasLayer"]
+
+[node name="Control" type="Control" parent="." node_paths=PackedStringArray("sound", "anim")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_vfre0")
+sound = NodePath("../16-TheCalmBeforeTheStorm")
+anim = NodePath("../AnimationPlayer")
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+z_index = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 2040.0
+offset_bottom = 1064.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.192157)
+
+[node name="start" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 844.0
+offset_top = 356.0
+offset_right = 1047.0
+offset_bottom = 456.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 51
+text = "Start"
+
+[node name="Credit" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 844.0
+offset_top = 484.0
+offset_right = 1047.0
+offset_bottom = 584.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 51
+text = "Credit"
+
+[node name="quit" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 844.0
+offset_top = 612.0
+offset_right = 1047.0
+offset_bottom = 712.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 51
+text = "Quit"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+texture_filter = 1
+position = Vector2(960, 536)
+scale = Vector2(10.1053, 8.0584)
+texture = ExtResource("2_ra187")
+
+[node name="16-TheCalmBeforeTheStorm" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_vfjsx")
+volume_db = 5.0
+autoplay = true
+script = ExtResource("4_rxhbf")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_dnjea")
+}
+
+[connection signal="pressed" from="Control/start" to="Control" method="_on_start_pressed"]
+[connection signal="pressed" from="Control/Credit" to="Control" method="_on_credit_pressed"]
+[connection signal="pressed" from="Control/quit" to="Control" method="_on_quit_pressed"]

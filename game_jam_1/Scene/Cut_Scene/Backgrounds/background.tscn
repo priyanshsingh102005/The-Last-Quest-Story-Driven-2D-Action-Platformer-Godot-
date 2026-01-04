@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=3 uid="uid://d6govy4virfq"]
+
+[ext_resource type="Texture2D" uid="uid://mded66th730y" path="res://Asset/Environment/World_1/sky.png" id="1_q5k7c"]
+[ext_resource type="Texture2D" uid="uid://c8y12ol21wylf" path="res://Asset/Environment/World_1/clouds.png" id="2_edrj8"]
+[ext_resource type="Texture2D" uid="uid://blfihdtqekyau" path="res://Asset/Environment/World_1/sea.png" id="3_aob61"]
+[ext_resource type="Texture2D" uid="uid://cwv4nfwbfech5" path="res://Asset/Environment/World_1/far-grounds.png" id="4_dme8w"]
+
+[node name="Background" type="ParallaxBackground"]
+
+[node name="sky" type="ParallaxLayer" parent="."]
+position = Vector2(0, 128)
+motion_scale = Vector2(0.1, 1)
+motion_offset = Vector2(-30, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="sky"]
+texture_repeat = 2
+position = Vector2(0, -195.06)
+texture = ExtResource("1_q5k7c")
+centered = false
+region_enabled = true
+region_rect = Rect2(-0.505, -1.5, 4150, 305)
+
+[node name="cloud_layer" type="ParallaxLayer" parent="."]
+position = Vector2(0, 1.895)
+motion_scale = Vector2(0.3, 1)
+motion_offset = Vector2(-80, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="cloud_layer"]
+texture_repeat = 2
+texture = ExtResource("2_edrj8")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 4144, 235)
+
+[node name="sea_layer" type="ParallaxLayer" parent="."]
+position = Vector2(0, 128)
+motion_scale = Vector2(0.4, 1)
+motion_offset = Vector2(-105, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="sea_layer"]
+texture_repeat = 2
+texture = ExtResource("3_aob61")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 4150, 96)
+
+[node name="far_ground_layer" type="ParallaxLayer" parent="."]
+position = Vector2(500, 128)
+motion_scale = Vector2(0.6, 1)
+motion_offset = Vector2(-30, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="far_ground_layer"]
+texture_repeat = 2
+texture = ExtResource("4_dme8w")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 3750, 110)

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=3 format=3 uid="uid://buxrw8roromdt"]
+
+[ext_resource type="Texture2D" uid="uid://cgjlgn2k00tb3" path="res://Asset/Character/Enemies/Knight/Portrate.png" id="1_p2k1i"]
+[ext_resource type="Script" uid="uid://d3ctx8tgs6axp" path="res://Scripts/Dialogues.gd" id="1_xun14"]
+
+[resource]
+script = ExtResource("1_xun14")
+speaker_name = "fallen knight"
+side = "right"
+portrait = ExtResource("1_p2k1i")
+text = "smirks weakly No, Father… it gave me what you never could — power."
+metadata/_custom_type_script = "uid://d3ctx8tgs6axp"
