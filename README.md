@@ -40,12 +40,6 @@ This journey is not just about combat, but about loss, redemption, and the light
 
 ---
 
-## 💻 Build Recommendation
-For the best experience, download the **Windows (.exe)** version instead of playing in the browser:
-- Smoother performance  
-- Faster load times  
-
----
 
 ## 🔧 Tech Stack
 - **Engine:** Godot  
